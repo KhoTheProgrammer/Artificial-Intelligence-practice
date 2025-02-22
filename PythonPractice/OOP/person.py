@@ -1,16 +1,14 @@
-class Person():
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+class Person:
+    def __init__(self, fname, lname):
+        self.firstname = fname
+        self.lastname = lname
         print("im in the constructor")
-    
+
     def __str__(self):
-        return f"{self.name}({self.age})"
-    
+        return f"{self.firstname}{self.lastname}"
+
+    def printname(self):
+        print(f"Hello my name is {self.firstname} {self.lastname}")
+
     def myfunc(self):
-        print("Hello my name is " + self.name + " and i am " + str(self.age) + " years old")
-
-p1 = Person("khoo", 56)
-print(p1)
-
-        
+        print(f"Hello my name is {self.firstname} {self.lastname}")
